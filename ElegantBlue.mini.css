@@ -22,8 +22,12 @@
 }
 .app,
 .callout-backdrop,
+:root{
+  --background-image: url(https://asdf.asdf.com/image.png);
+  --transition: 5s;
+}
 canvas {
-    --background-image: url(https://i.imgur.com/Mu4SNn6.jpg)!important;
+    background-image: url(--background-image:)!important;
     background-size: cover
 }
 .theme-dark .layer,
