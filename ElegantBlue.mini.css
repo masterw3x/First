@@ -27,7 +27,8 @@
   --transition: 5s;
 }
 canvas {
-    background-image: url(--background-image:)!important;
+    background-image: var(--background-image);
+    transition: var(--transition);
     background-size: cover
 }
 .theme-dark .layer,
