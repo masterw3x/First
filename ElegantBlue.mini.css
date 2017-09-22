@@ -12,8 +12,10 @@
 }
 :root {
     --main-color: #057F95;
-    --hover-color: #045B6B
-}
+    --hover-color: #045B6B;
+    --background-image: url(https://orig00.deviantart.net/8895/f/2016/155/7/7/neon_genesis_evangelion___asuka_sohryu_langley_by_rinjaa-da4zon1.png);
+    --transition: 5s;
+}}
 [style*="background-color: rgb(114, 137, 218)"] {
     background-color: var(--main-color)!important
 }
@@ -22,10 +24,6 @@
 }
 .app,
 .callout-backdrop,
-:root{
-  --background-image: url(https://asdf.asdf.com/image.png);
-  --transition: 5s;
-}
 canvas {
     background-image: var(--background-image);
     transition: var(--transition);
@@ -33,7 +31,10 @@ canvas {
 }
 .theme-dark .layer,
 .theme-dark .layers {
-    background: 0 0!important
+    background-image: var(--background-image) !important;
+    transition: background-image 5s linear !important;
+    transition-duration: var(--transition) !important;
+    background-size: cover !important;
 }
 .account:after {
     content: "Elegant Blue by Arch";
