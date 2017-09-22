@@ -25,7 +25,8 @@
 .app,
 .callout-backdrop,
 canvas {
-    background-image:var(--background-image);!important;
+    background-image:var(--background-image);
+    transition: var(--transition);
     background-size: cover
 }
 .theme-dark .layer,
